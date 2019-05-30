@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  resource :users
+ root 'sessions#new'
+ resource :sessions
+
+ resource :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
