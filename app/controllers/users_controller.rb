@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @User = User.new user_params
+    @user = User.new user_params
 
     return render action: 'new' unless @user.save
 
